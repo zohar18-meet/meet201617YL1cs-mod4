@@ -1,5 +1,5 @@
 #FIX THE LINE BELOW
-class xyz: #<-----Replace xyz-make a new class, MyStr, that inherits from str
+class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
     """
     Build a subclass of str with some new, fun methods.
     """
@@ -31,12 +31,15 @@ class xyz: #<-----Replace xyz-make a new class, MyStr, that inherits from str
         :returns: a new string with replacement complete
         """
         #################
-        #Make this method work in the way described in the block comment above
+        #Make this method work in the way described in
+        #the block comment above.
         #Hints:
         # 1. Remember that self is a MyStr object,
         #    and a MyStr object is also a str
-        # 2. The following str methods will be helpful: replace, lower, and upper
-        # 3. You will need to call the replace method twice
-        # 4. There are multiple solutions, but you can do this in as little as 1 line.
+        # 2. The following str methods will be helpful:
+        #       replace, lower, and upper
+        # 3. There are multiple solutions, but you can
+        #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
+        
