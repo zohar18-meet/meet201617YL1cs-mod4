@@ -18,12 +18,17 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
     def replace(self, take_out, use_this):
         """
         Override the replace method of string.
-        The new replace method is case-insensitive;
-        otherwise, it behaves the same as str.replace.
-        Example:
+        The new replace method is case-insensitive,
+        and the output will always be lower-case.
+
+        Examples:
         >>> test=MyStr('aAaA')
         >>> test.replace('a','b')
         bbbb
+
+        >>> test=MyStr('aAaADD')
+        >>> test.replace('AA','c')
+        ccdd
 
         :param take_out: the substring that will be replaced
         :param use_this: the substring that will be used in place of take_out
@@ -35,7 +40,9 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         #the block comment above.
         #Hints:
         # 1. Remember that self is a MyStr object,
-        #    and a MyStr object is also a str
+        #    and a MyStr object is also a str.
+        #    However, remember that to call the replace
+        #    method of str, you may need to use super
         # 2. The following str methods will be helpful:
         #       replace, lower, and upper
         # 3. There are multiple solutions, but you can
