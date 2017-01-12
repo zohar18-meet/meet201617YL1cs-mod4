@@ -1,40 +1,16 @@
 #FIX THE LINE BELOW
-class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
-    """
-    Build a subclass of str with some new, fun methods.
-    """
-    #The first method is done for you; you must complete the second (replace).
-    
+class MyStr(str):     
     def exclaim(self,num):
-        """
-        Add num exclamation points to string.
-        (We did this example in class.)
-
-        :param num: number of exclamation points to add
-        :returns: a string with num exclamation points added to the end
-        """
         return self+'!'*num
 
     def replace(self, take_out, use_this):
-        """
-        Override the replace method of string.
-        The new replace method is case-insensitive,
-        and the output will always be lower-case.
-
-        Examples:
-        >>> test=MyStr('aAaA')
-        >>> test.replace('a','b')
-        bbbb
-
-        >>> test=MyStr('aAaADD')
-        >>> test.replace('AA','c')
-        ccdd
-
-        :param take_out: the substring that will be replaced
-        :param use_this: the substring that will be used in place of take_out
-
-        :returns: a new string with replacement complete
-        """
+        return self.lower().replace(take_out,use_this)
+                                    
+        #lower.str = self.lower()
+        #the_answer = lower_str.replace(take_out,use_this)
+        #return the_answer
+        
+    
         #################
         #Make this method work in the way described in
         #the block comment above.
